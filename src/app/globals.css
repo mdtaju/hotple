@@ -16,6 +16,12 @@
   }
 }
 
+@layer components {
+  body {
+    @apply dark:bg-[#0a0a0a];
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
