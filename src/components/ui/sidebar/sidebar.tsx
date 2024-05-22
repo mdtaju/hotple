@@ -12,24 +12,24 @@ export default function Sidebar() {
           {/* discover */}
           <div className="w-full flex items-center gap-4 px-4 py-3 rounded-full hover:bg-lightGray dark:hover:bg-darkSecondary cursor-pointer">
             <TbSmartHome className="w-6 h-6" />
-            <span className="text-lg font-medium">Discover</span>
+            <span className="text-lg font-medium">发现</span>
           </div>
           {/* release */}
           <div className="w-full flex items-center gap-4 px-4 py-3 rounded-full hover:bg-lightGray dark:hover:bg-darkSecondary cursor-pointer">
             <TbSquareRoundedPlus className="w-6 h-6" />
-            <span className="text-lg font-medium">Release</span>
+            <span className="text-lg font-medium">发布</span>
           </div>
           {/* notify */}
           <div className="w-full flex items-center gap-4 px-4 py-3 rounded-full hover:bg-lightGray dark:hover:bg-darkSecondary cursor-pointer">
             <IoNotificationsOutline className="w-6 h-6" />
-            <span className="text-lg font-medium">Notify</span>
+            <span className="text-lg font-medium">通知</span>
           </div>
         </div>
         {/* list container end */}
         {/* menu start */}
         <div className="px-4 py-3 flex items-center gap-3 hover:bg-lightGray dark:hover:bg-darkSecondary rounded-full cursor-pointer text-gray-700 dark:text-gray-200">
           <HiOutlineMenu className="w-6 h-6" />
-          <span className="text-lg font-medium">Menu</span>
+          <span className="text-lg font-medium">菜单</span>
         </div>
         {/* menu end */}
       </div>
