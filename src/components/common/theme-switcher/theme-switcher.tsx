@@ -9,14 +9,14 @@ function ThemeSwitcher() {
 
   // theme changing handler
   function changeToLightHandler() {
-    if (theme === "dark") {
+    if (theme !== "light") {
       setTheme("light");
     }
   }
 
   // theme changing handler
   function changeToDarkHandler() {
-    if (theme === "light") {
+    if (theme !== "dark") {
       setTheme("dark");
     }
   }
