@@ -16,7 +16,7 @@ export default function Search() {
           name=""
           id=""
           className="bg-transparent outline-none px-4 caret-primary h-[40px] grow"
-          placeholder="登录以探索更多"
+          placeholder="더 자세히 알아보려면 로그인하세요."
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />

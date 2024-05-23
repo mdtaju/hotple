@@ -20,6 +20,15 @@
   body {
     @apply dark:bg-[#0a0a0a];
   }
+  .list_item_img_container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    @apply transition-all duration-150 hover:bg-darkSecondary hover:bg-opacity-30;
+  }
 }
 
 @layer utilities {

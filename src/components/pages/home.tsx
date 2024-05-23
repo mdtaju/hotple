@@ -8,7 +8,7 @@ const HomeHero = () => {
     <div>
       <Header />
       {/* main container */}
-      <div className="w-full max-w-[1440px] mx-auto flex items-start">
+      <section className="w-full max-w-[1700px] mx-auto flex items-start">
         <Sidebar />
         {/* content container */}
         <div className="w-full md:w-[calc(100%-260px)] mr-0 md:ml-[260px] min-h-screen">
@@ -17,7 +17,7 @@ const HomeHero = () => {
           </div>
           <ThemeSwitcher />
         </div>
-      </div>
+      </section>
     </div>
   );
 };

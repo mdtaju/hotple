@@ -13,8 +13,8 @@ export default function Header() {
     setSearchActive(true);
   };
   return (
-    <div className="w-full h-[72px] grid place-items-center sticky top-0 bg-white dark:bg-darkThemeColor">
-      <div className="w-full max-w-[1440px] mx-auto px-4 md:px-8 flex items-center justify-between h-fit">
+    <div className="w-full h-[72px] grid place-items-center sticky top-0 bg-white dark:bg-darkThemeColor z-50">
+      <div className="w-full max-w-[1700px] mx-auto px-4 md:px-8 flex items-center justify-between h-fit">
         {/* logo and search container */}
         {!searchActive && (
           <div className="flex items-center justify-between grow">
@@ -40,7 +40,7 @@ export default function Header() {
                     name=""
                     id=""
                     className="bg-transparent outline-none px-4 caret-primary h-[40px] grow max-w-[170px]"
-                    placeholder="登录以探索更多"
+                    placeholder="더 자세히 알아보려면 로그인하세요."
                     value={searchText}
                     onChange={(e) => setSearchText(e.target.value)}
                   />
@@ -73,12 +73,12 @@ export default function Header() {
           <div className="hidden md:flex items-center">
             <div className="py-2 px-5 hover:bg-lightGray dark:hover:bg-darkSecondary rounded-full cursor-pointer">
               <span className="text-sm text-gray-500 dark:text-gray-300">
-                创作中心
+                창작센터
               </span>
             </div>
             <div className="py-2 px-5 hover:bg-lightGray dark:hover:bg-darkSecondary rounded-full cursor-pointer">
               <span className="text-sm text-gray-500 dark:text-gray-300">
-                商务合作
+                사업 협력
               </span>
             </div>
           </div>

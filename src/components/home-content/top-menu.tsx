@@ -1,23 +1,23 @@
 import { useState } from "react";
 
 const menuItems: string[] = [
-  "推荐",
-  "电子公园",
-  "全套服装",
-  "美味佳肴",
-  "化妆品",
-  "电影和电视",
-  "工作场所",
-  "家",
-  "游戏",
-  "旅行",
-  "健康",
+  "추천하다",
+  "전자 공원",
+  "차림새",
+  "맛있는 음식",
+  "조립",
+  "영화와 텔레비전",
+  "직장",
+  "집",
+  "게임",
+  "여행하다",
+  "적합",
 ];
 
 export default function TopMenu() {
-  const [activeOption, setActiveOption] = useState("推荐");
+  const [activeOption, setActiveOption] = useState("추천하다");
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full overflow-hidden px-0 sm:px-4">
       <div className="flex items-center gap-2 overflow-x-auto">
         {menuItems.map((item, i) => (
           <div key={i}>
