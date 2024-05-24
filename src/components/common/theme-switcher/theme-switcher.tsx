@@ -22,11 +22,15 @@ function ThemeSwitcher() {
   }
 
   return (
-    <div className="flex items-center gap-4">
-      <button onClick={changeToLightHandler}>
+    <div className="theme_switcher_container">
+      <button
+        onClick={changeToLightHandler}
+        className={`${theme !== "dark" ? "light_btn_active" : ""}`}>
         <LuSunMedium />
       </button>
-      <button onClick={changeToDarkHandler}>
+      <button
+        onClick={changeToDarkHandler}
+        className={`${theme !== "light" ? "light_btn_active" : ""}`}>
         <IoMoonOutline />
       </button>
     </div>

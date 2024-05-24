@@ -1,0 +1,40 @@
+@import "../styles/custom-styles.scss";
+@import "../styles/sidebar-styles.scss";
+@import "../styles/home-content.scss";
+
+// @layer components {
+//   body {
+//     @apply dark:bg-[#0a0a0a];
+//   }
+// }
+
+// @layer utilities {
+//   .text-balance {
+//     text-wrap: balance;
+//   }
+// }
+
+body {
+  background: white;
+}
+
+.dark body {
+  background: $darkThemeColor;
+}
+
+button {
+  outline: none;
+  background: transparent;
+  border: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+.MuiPopover-paper {
+  border: 0px !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.08), 0 1px 4px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 1px hsla(0, 0%, 100%, 0.06) inset !important;
+}

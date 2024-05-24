@@ -13,44 +13,43 @@ export default function Header() {
     setSearchActive(true);
   };
   return (
-    <div className="w-full h-[72px] grid place-items-center sticky top-0 bg-white dark:bg-darkThemeColor z-50">
-      <div className="w-full max-w-[1700px] mx-auto px-4 md:px-8 flex items-center justify-between h-fit">
+    <div className="header_main_container">
+      <div className="header_inner_container">
         {/* logo and search container */}
         {!searchActive && (
-          <div className="flex items-center justify-between grow">
+          <div className="logo_and_search_container">
             {/* logo */}
-            <div className="bg-primary text-white p-2 rounded-lg text-sm">
-              Logo
-            </div>
+            <div className="logo_container">Logo</div>
             {/* search */}
-            <div className="pr-0 md:pr-[100px] hidden md:block">
+            <div className="search_container">
               <Search />
             </div>
           </div>
         )}
         {/* mobile search input start */}
         {searchActive && (
-          <div className="grow block md:hidden">
-            <div className={`flex items-center gap-2`}>
+          <div className="search_container_small_view">
+            <div className={`search_inner_container_small`}>
               {/* search input start */}
-              <div className="grow bg-lightGray dark:bg-darkSecondary h-[40px] rounded-full flex items-center justify-between">
-                <div className="flex items-center justify-between grow">
+              <div className="search_input_outer_container">
+                <div className="search_input_inner_container">
                   <input
                     type="text"
                     name=""
                     id=""
-                    className="bg-transparent outline-none px-4 caret-primary h-[40px] grow max-w-[170px]"
                     placeholder="더 자세히 알아보려면 로그인하세요."
                     value={searchText}
                     onChange={(e) => setSearchText(e.target.value)}
                   />
                 </div>
-                <button aria-label="search" className="h-full pl-1 pr-4">
-                  <CiSearch className="w-5 h-5" />
+                <button aria-label="search">
+                  <CiSearch className="custom-size-icon" />
                 </button>
               </div>
               {/* search input end */}
-              <span onClick={() => setSearchActive(false)} className="text-sm">
+              <span
+                onClick={() => setSearchActive(false)}
+                style={{ fontSize: "14px" }}>
                 Cancel
               </span>
             </div>
@@ -58,11 +57,11 @@ export default function Header() {
         )}
         {/* mobile search input end */}
         {/* menu mobile */}
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="mobile_search_menu_container">
           {!searchActive && (
             <>
-              <button onClick={searchActiveHandler} className="p-2">
-                <CiSearch className="w-5 h-5" />
+              <button onClick={searchActiveHandler} style={{ padding: "8px" }}>
+                <CiSearch className="custom-size-icon" />
               </button>
               <MenuMobile />
             </>
@@ -70,16 +69,14 @@ export default function Header() {
         </div>
         {/* menu */}
         {!searchActive && (
-          <div className="hidden md:flex items-center">
-            <div className="py-2 px-5 hover:bg-lightGray dark:hover:bg-darkSecondary rounded-full cursor-pointer">
-              <span className="text-sm text-gray-500 dark:text-gray-300">
-                창작센터
-              </span>
+          <div className="desktop_menu_container">
+            <div
+              className="desktop_menu_inner_container"
+              style={{ marginRight: "8px" }}>
+              <span>창작센터</span>
             </div>
-            <div className="py-2 px-5 hover:bg-lightGray dark:hover:bg-darkSecondary rounded-full cursor-pointer">
-              <span className="text-sm text-gray-500 dark:text-gray-300">
-                사업 협력
-              </span>
+            <div className="desktop_menu_inner_container">
+              <span>사업 협력</span>
             </div>
           </div>
         )}

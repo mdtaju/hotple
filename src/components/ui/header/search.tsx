@@ -9,28 +9,23 @@ export default function Search() {
     setSearchText("");
   };
   return (
-    <div className="w-[512px] bg-lightGray dark:bg-darkSecondary h-[40px] rounded-full flex items-center justify-between">
-      <div className="flex items-center justify-between grow">
+    <div className="search_outer_container_2">
+      <div className="search_inner_container_2">
         <input
           type="text"
           name=""
-          id=""
-          className="bg-transparent outline-none px-4 caret-primary h-[40px] grow"
           placeholder="더 자세히 알아보려면 로그인하세요."
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
         {searchText && (
-          <button
-            onClick={handleTextClear}
-            aria-label="clear"
-            className="h-full px-1">
-            <IoCloseOutline className="w-5 h-5" />
+          <button onClick={handleTextClear} aria-label="clear">
+            <IoCloseOutline className="custom-size-icon" />
           </button>
         )}
       </div>
-      <button aria-label="search" className="h-full pl-1 pr-4">
-        <CiSearch className="w-5 h-5" />
+      <button aria-label="search">
+        <CiSearch className="custom-size-icon" />
       </button>
     </div>
   );
