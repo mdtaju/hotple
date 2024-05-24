@@ -99,11 +99,9 @@ export default function MenuMobile() {
               {/* divider */}
               <div className="sidebar_popover_divider"></div>
               {/* middle list start */}
-              <div className="space-y-1">
+              <div>
                 <div style={{ padding: "8px 12px" }}>
-                  <span className="text-[10px] font-semibold text-gray-600 dark:text-gray-400">
-                    면접방법
-                  </span>
+                  <span className="sidebar_popup_setup_title">면접방법</span>
                 </div>
                 {/* item 1 */}
                 <div className="sidebar_top_lists_bottom_item">

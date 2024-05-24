@@ -295,7 +295,10 @@
   border-radius: 9999px;
   background-color: #f7fafc;
   button {
-    padding: 4px;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
     border-radius: 9999px;
   }
 }

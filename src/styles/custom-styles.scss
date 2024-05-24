@@ -116,6 +116,9 @@ $darkText: #cbd5e0;
         padding-right: 1rem;
       }
     }
+    span {
+      color: $lightText;
+    }
   }
 }
 
@@ -126,10 +129,13 @@ $darkText: #cbd5e0;
 }
 
 .dark {
-  .search_container_small_view
-    .search_inner_container_small
+  .search_container_small_view .search_inner_container_small {
     .search_input_outer_container {
-    background-color: $darkSecondary;
+      background-color: $darkSecondary;
+    }
+    span {
+      color: $lightText;
+    }
   }
 }
 
@@ -222,6 +228,12 @@ $darkText: #cbd5e0;
     padding: 0.5rem;
     background-color: $lightGray;
     border-radius: 9999px;
+  }
+}
+
+.dark .mobile_search_menu_container_02 {
+  button {
+    background-color: $darkSecondary;
   }
 }
 @media (min-width: 768px) {
