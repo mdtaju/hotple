@@ -21,14 +21,16 @@ const dataArray: listsDataTypes = [
     inclusions: [],
   },
   {
-    title: "디럭스룸 - 침대 2개",
+    title:
+      "디럭스룸 - 침대 2개 디럭스룸 - 침대 2개 디럭스룸 - 침대 2개 디럭스룸 - 침대 2개",
     img_url:
       "https://sns-webpic-qc.xhscdn.com/202405230040/65339fcb58945ad13e139ba8dc3c0f86/1040g2sg31253et7tkc005noidspg8vubu1qvoj0!nd_dft_wlteh_webp_3",
     price: 1200,
     inclusions: [],
   },
   {
-    title: "디럭스룸 - 침대 2개",
+    title:
+      "디럭스룸 - 침대 2개 디럭스룸 - 침대 2개 디럭스룸 - 침대 2개 디럭스룸 - 침대 2개",
     img_url:
       "https://sns-webpic-qc.xhscdn.com/202405231157/4351907c7af2c4180de06b3011cc4226/1040g2sg312d7mke3m4005np70lo08c5jitbs2q0!nd_dft_wlteh_webp_3",
     price: 820,
@@ -319,7 +321,7 @@ const dataArray: listsDataTypes = [
     img_url:
       "https://sns-webpic-qc.xhscdn.com/202405231158/90b39e8d3a31ab3c541483e2186566e7/1040g2sg312rhcnbnk0905ph4v26hojs562i4u5g!nd_dft_wlteh_webp_3",
     price: 950,
-    inclusions: ["Wi-Fi", "Breakfast", "Non-refundable"],
+    inclusions: [],
   },
   {
     title: "디럭스룸 - 침대 2개",
@@ -347,7 +349,7 @@ const dataArray: listsDataTypes = [
     img_url:
       "https://sns-webpic-qc.xhscdn.com/202405241759/9a72e3578d02f27e967ac9eaf2dba0eb/eedcec00-1555-3701-9ddc-688248597341!nd_dft_wlteh_webp_3",
     price: 900,
-    inclusions: ["Wi-Fi", "Breakfast", "Non-refundable"],
+    inclusions: ["Breakfast", "Non-refundable"],
   },
   {
     title: "디럭스룸 - 침대 2개",
@@ -361,7 +363,7 @@ const dataArray: listsDataTypes = [
     img_url:
       "https://sns-webpic-qc.xhscdn.com/202405230040/65339fcb58945ad13e139ba8dc3c0f86/1040g2sg31253et7tkc005noidspg8vubu1qvoj0!nd_dft_wlteh_webp_3",
     price: 1000,
-    inclusions: ["Wi-Fi", "Breakfast", "Non-refundable"],
+    inclusions: [],
   },
   {
     title: "디럭스룸 - 침대 2개",
@@ -378,11 +380,11 @@ const dataArray: listsDataTypes = [
     inclusions: [],
   },
   {
-    title: "디럭스룸 - 침대 2개",
+    title: "디럭스룸 - 침대 2개 디럭스룸 - 침대 2개 디럭스룸 - 침대 2개",
     img_url:
       "https://sns-webpic-qc.xhscdn.com/202405231157/4351907c7af2c4180de06b3011cc4226/1040g2sg312d7mke3m4005np70lo08c5jitbs2q0!nd_dft_wlteh_webp_3",
     price: 820,
-    inclusions: ["Wi-Fi", "Breakfast"],
+    inclusions: [],
   },
   {
     title: "디럭스룸 - 침대 2개",
