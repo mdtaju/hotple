@@ -3,7 +3,6 @@ import { listsDataTypes } from "@/utils/demo-data";
 import Image from "next/image";
 import Dialog from "@mui/material/Dialog";
 import { useTheme } from "next-themes";
-import { useMediaQuery } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
 import { Backdrop } from "@mui/material";
 
@@ -22,18 +21,6 @@ export default function Card({ item }: { item: listsDataTypes }) {
       setBackDropColor("rgba(0, 0, 0, 0.4)");
     }
   }, [theme]);
-
-  const getDialogPosition = () => {
-    if (anchorRef.current) {
-      const rect = anchorRef.current.getBoundingClientRect();
-      const x = rect.left + rect.width / 2;
-      const y = rect.top + rect.height / 2;
-      return `${x}px ${y}px`;
-    }
-    return "center center";
-  };
-
-  const dialogPosition: string = getDialogPosition();
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -108,7 +95,6 @@ export default function Card({ item }: { item: listsDataTypes }) {
         // }}
         PaperProps={{
           style: {
-            dialogPosition,
             animation: `${open ? "dialogOpen" : "dialogClose"} 0.3s forwards`,
           },
         }}>
