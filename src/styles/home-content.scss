@@ -207,3 +207,237 @@
     }
   }
 }
+
+// login dialog
+.login_dialog_main_container {
+  width: 100%;
+  height: 480px;
+  background: white;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 16px;
+}
+
+.dark {
+  .login_dialog_main_container {
+    background: #181818;
+  }
+}
+
+.login_dialog_inner_container_01,
+.login_dialog_inner_container_02 {
+  width: 50%;
+  height: 100%;
+  padding: 30px;
+}
+
+.login_dialog_inner_container_01 {
+  border-right: 1px solid rgb(237, 237, 237);
+  .login_msg_01 {
+    width: 100%;
+    padding: 4px 25px;
+    background: #ebf3fe;
+    color: #61a0f7;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 9999px;
+  }
+  .dialog_logo {
+    background: $primary;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 500;
+    width: fit-content;
+    margin: 0px auto;
+    margin-top: 16px;
+  }
+  .dialog_qr_code_container {
+    width: 160px;
+    height: 160px;
+    background: white;
+    box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.08),
+      0 1px 4px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 12px;
+    margin: 0px auto;
+    margin-top: 35px;
+    position: relative;
+    .qr_image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 16px;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  .dialog_available_options {
+    text-align: center;
+    margin-top: 12px;
+    .cc_options {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      width: fit-content;
+      margin: 0px auto;
+      div {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        span {
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .dialog_bottom_text {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: gray;
+    font-size: 14px;
+    width: fit-content;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 4px 16px;
+    border-radius: 9999px;
+    transition: all ease 0.2s;
+    cursor: pointer;
+    .pause_btn_01 {
+      display: none;
+    }
+    &:hover {
+      background: #f7f7f7;
+      .play_btn_01 {
+        display: none;
+      }
+      .pause_btn_01 {
+        display: block;
+      }
+    }
+  }
+}
+
+.dark {
+  .login_dialog_inner_container_01 {
+    border-right: 1px solid rgb(60, 60, 60);
+    .login_msg_01 {
+      background: #1c2f2f;
+    }
+    .dialog_available_options {
+      color: white;
+    }
+  }
+}
+
+.login_dialog_inner_container_02 {
+  .close_btn {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    float: right;
+    border-radius: 9999px;
+    color: gray;
+    &:hover {
+      background: $lightGray;
+    }
+  }
+  .auth_container_01 {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      color: $lightText;
+    }
+    .number_box_container {
+      margin-top: 50px;
+      padding: 8px 12px;
+      background: $lightGray;
+      border-radius: 9999px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      span {
+        padding-right: 8px;
+        border-right: 1px solid lightgray;
+      }
+      input {
+        background: transparent;
+      }
+      input::placeholder {
+        font-size: 12px;
+      }
+    }
+    .otp_box_container {
+      margin-top: 15px;
+      padding: 8px 12px;
+      background: $lightGray;
+      border-radius: 9999px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      span {
+        padding-left: 8px;
+        font-size: 12px;
+        color: $primary;
+        cursor: pointer;
+      }
+      input {
+        background: transparent;
+        width: 50%;
+      }
+      input::placeholder {
+        font-size: 12px;
+      }
+    }
+    .policy_container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 10px;
+      padding: 0px 6px;
+      margin-top: 20px;
+      span {
+        text-align: start;
+      }
+    }
+    .user_login_msg {
+      font-size: 12px;
+      margin-top: 30px;
+    }
+  }
+}
+
+.dark {
+  .login_dialog_inner_container_02 {
+    .close_btn {
+      color: gray;
+      &:hover {
+        background: $darkSecondary;
+      }
+    }
+    .auth_container_01 {
+      p {
+        color: $darkText;
+      }
+      .number_box_container {
+        background: #212121;
+        span {
+          color: white;
+          border-right: 1px solid gray;
+        }
+      }
+      .otp_box_container {
+        background: #212121;
+      }
+      .policy_container {
+        color: $darkText;
+      }
+    }
+  }
+}

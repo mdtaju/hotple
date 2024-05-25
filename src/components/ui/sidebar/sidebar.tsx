@@ -4,6 +4,7 @@ import { IoNotificationsOutline } from "react-icons/io5";
 import { GoThumbsup } from "react-icons/go";
 import { PiLinktreeLogo } from "react-icons/pi";
 import Menu from "./menu";
+import LoginBtn from "../auth/login-btn";
 
 export default function Sidebar() {
   return (
@@ -31,7 +32,7 @@ export default function Sidebar() {
             <span>통지하다</span>
           </div>
           {/* login button */}
-          <button className="sidebar_login_button">로그인</button>
+          <LoginBtn />
           {/* login info banner */}
           <div className="sidebar_login_info_banner_container">
             <p>지금 로그인하십시오</p>
