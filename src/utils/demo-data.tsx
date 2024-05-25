@@ -3,9 +3,9 @@ type listsDataTypes = {
   img_url: string;
   price: number;
   inclusions: string[] | [];
-}[];
+};
 
-const dataArray: listsDataTypes = [
+const dataArray: listsDataTypes[] = [
   {
     title: "디럭스룸 - 침대 2개",
     img_url:

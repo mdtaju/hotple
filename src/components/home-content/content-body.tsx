@@ -1,6 +1,6 @@
 import { dataArray } from "@/utils/demo-data";
-import Image from "next/legacy/image";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import Card from "../ui/card/card";
 
 // grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5
 export default function ContentBody() {
@@ -18,33 +18,7 @@ export default function ContentBody() {
         }}>
         <Masonry gutter="10px">
           {dataArray.map((item, i) => (
-            <div key={i} className="home_content_list_item_container">
-              {/* image container */}
-              <div className="list_item_img_container">
-                <Image
-                  src={item.img_url}
-                  alt={item.title}
-                  layout="fill"
-                  placeholder="blur"
-                  blurDataURL={item.img_url}
-                  className="list_img"
-                />
-              </div>
-              {/* info container */}
-              <div
-                style={{ padding: "0.5rem", paddingBottom: "0px" }}
-                className="home_content_info_container">
-                <h2>{item.title}</h2>
-                {item.inclusions.length !== 0 && (
-                  <div className="content_info_inclusions">
-                    {item.inclusions.map((inc, i) => (
-                      <span key={i}>✔ {inc}</span>
-                    ))}
-                  </div>
-                )}
-                <p>가격: {item.price}</p>
-              </div>
-            </div>
+            <Card key={i} item={item} />
           ))}
         </Masonry>
       </ResponsiveMasonry>
